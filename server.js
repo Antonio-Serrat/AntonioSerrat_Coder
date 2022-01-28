@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 app.get("/productos", async (req, res) => {
     const productos = await cont.getAll()
-    res.send(productos)
+    res.send(JSON.stringify(productos))
 })
 
 app.get("/productoRandom", async (req, res) => {
