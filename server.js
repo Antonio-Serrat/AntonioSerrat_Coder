@@ -6,13 +6,13 @@ const cont = new Contenedor("productos");
 
 app.get("/productos", async (req, res) => {
     const productos = await cont.getAll()
-    res.json(productos)
+    res.send(JSON.stringify(productos))
 })
 
 app.get("/productoRandom", async (req, res) => {
     const productos = await cont.getAll()
     const pr = productos[Math.floor(Math.random() * productos.length)]
-    res.json(pr)
+    res.send(JSON.stringify(pr))
 })
 
 
