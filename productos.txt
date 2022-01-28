@@ -1,0 +1,20 @@
+[
+  {
+    "tittle": "Detergente Magistral 1.4l",
+    "price": 199.95,
+    "thumbnail": "productsImg/detergente-Magistral-1,4l.jpg",
+    "id": 1
+  },
+  {
+    "tittle": "Detergente Ala 700ml",
+    "price": 130.46,
+    "thumbnail": "productsImg/detergente-Ala-700ml.jpg",
+    "id": 2
+  },
+  {
+    "tittle": "Jabón blanco Federal 150g",
+    "price": 170.87,
+    "thumbnail": "productsImg/jabonBlanco-Federal.jpg",
+    "id": 3
+  }
+]
