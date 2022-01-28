@@ -4,9 +4,16 @@ const app = express()
 
 const cont = new Contenedor("productos");
 
+app.get("/", (req, res) => {
+    const allProd = "/productos"
+    const randomProd = "/productoRandom"
+    res.send(`<h2> Para ver todos los productos: ${allProd}.</h2>\n
+            <h2> Para ver un producto random: ${randomProd}.</h2>`)
+})
+
 app.get("/productos", async (req, res) => {
     const productos = await cont.getAll()
-    res.send(JSON.stringify(productos))
+    res.send(productos)
 })
 
 app.get("/productoRandom", async (req, res) => {
